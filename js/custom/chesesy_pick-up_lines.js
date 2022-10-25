@@ -1,0 +1,1 @@
+function initCheesyPickUpLines(){let e="";for(let n=0;n<3;n++)fetch("https://api.vvhan.com/api/love").then((e=>e.text())).then((n=>{e+="<li>"+n+"</li>",document.querySelector("#cheesy_pick-up_lines-container").innerHTML=e})).catch((function(e){console.log(e)}))}document.addEventListener("pjax:complete",(function(){initCheesyPickUpLines()}));
